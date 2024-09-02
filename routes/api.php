@@ -10,6 +10,8 @@ Route::middleware('auth:sanctum')->group(function (){
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
+
+    Route::apiResource('users', \App\Http\Controllers\Api\UserController::class);
 });
 
 Route::post('/signup', [AuthController::class, 'signup']);
