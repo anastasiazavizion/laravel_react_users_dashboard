@@ -7,8 +7,6 @@ export default function Signup(){
     }
 
     return(
-        <div className="login-signup-form animated fadeInDown">
-            <div className="form">
                 <form onSubmit={onSubmit}>
                     <h1 className="title">Register new account</h1>
                     <input placeholder="Name" type="text"/>
@@ -20,7 +18,5 @@ export default function Signup(){
                        Already have an account? <Link to="/login">Sign in</Link>
                     </p>
                 </form>
-            </div>
-        </div>
     )
 }

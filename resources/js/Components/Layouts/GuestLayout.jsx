@@ -1,7 +1,7 @@
 import {Navigate, Outlet} from "react-router-dom";
 import {useStateContext} from "../../context/ContextProvider.jsx";
 
-export default function GuestLayout(){
+export default function GuestLayout() {
 
     const {token} = useStateContext()
 
@@ -9,9 +9,13 @@ export default function GuestLayout(){
         return <Navigate to="/users"></Navigate>
     }
 
-return(
-   <div>
-       <Outlet/>
-   </div>
-)
+    return (
+        <div>
+            <div className="login-signup-form fadeInDown">
+                <div className="form">
+                    <Outlet/>
+                </div>
+            </div>
+        </div>
+    )
 }

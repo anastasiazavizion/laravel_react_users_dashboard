@@ -9,8 +9,6 @@ export default function Login(){
     }
 
     return(
-        <div className="login-signup-form animated fadeInDown">
-            <div className="form">
                 <form onSubmit={onSubmit}>
                     <h1 className="title">Login into your account</h1>
                     <input placeholder="Email" type="text"/>
@@ -20,7 +18,5 @@ export default function Login(){
                         Not Registered? <Link to="/signup">Signup</Link>
                     </p>
                 </form>
-            </div>
-        </div>
     )
 }
